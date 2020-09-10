@@ -9,6 +9,14 @@ export class Logs extends Component {
           [2:11 PM] Running On Infinix X572, Android API 27
         </Text>
         <Text style={styles.name}>[2:12 PM] Application Version: 5.0.9</Text>
+        <Text style={styles.name}>
+          [2:11 PM] Running On Infinix X572, Android API 27
+        </Text>
+        <Text style={styles.name}>[2:12 PM] Application Version: 5.0.9</Text>
+        <Text style={styles.name}>
+          [2:11 PM] Running On Infinix X572, Android API 27
+        </Text>
+        <Text style={styles.name}>[2:12 PM] Application Version: 5.0.9</Text>
       </View>
     );
   }

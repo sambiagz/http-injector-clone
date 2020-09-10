@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 export class Nav extends Component {
   render() {
@@ -9,38 +9,46 @@ export class Nav extends Component {
     // };
     return (
       <View style={styles.container}>
-        <Text
-          style={styles.name}
-          onPress={() => {
-            this.props.switchMe(1);
-          }}
-        >
-          HOME
-        </Text>
-        <Text
-          style={styles.name}
-          onPress={() => {
-            this.props.switchMe(2);
-          }}
-        >
-          LOGS
-        </Text>
-        <Text
-          style={styles.name}
-          onPress={() => {
-            this.props.switchMe(3);
-          }}
-        >
-          TOOLS
-        </Text>
-        <Text
-          style={styles.name}
-          onPress={() => {
-            this.props.switchMe(4);
-          }}
-        >
-          HELP
-        </Text>
+        <TouchableOpacity>
+          <Text
+            style={styles.name}
+            onPress={() => {
+              this.props.switchMe(1);
+            }}
+          >
+            HOME
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text
+            style={styles.name}
+            onPress={() => {
+              this.props.switchMe(2);
+            }}
+          >
+            LOGS
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text
+            style={styles.name}
+            onPress={() => {
+              this.props.switchMe(3);
+            }}
+          >
+            TOOLS
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text
+            style={styles.name}
+            onPress={() => {
+              this.props.switchMe(4);
+            }}
+          >
+            HELP
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }

@@ -3,6 +3,7 @@ import { StyleSheet, ScrollView } from "react-native";
 import Home from "./Home";
 import Log from "./Log";
 import Tools from "./Tools";
+import Help from "./Help/Help";
 
 export class Main extends Component {
   render() {
@@ -15,7 +16,7 @@ export class Main extends Component {
       case 3:
         return <Tools />;
       case 4:
-        return <Log />;
+        return <Help />;
       default:
         return <Home />;
     }
