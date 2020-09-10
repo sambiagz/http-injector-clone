@@ -1,26 +1,24 @@
 import React, { Component } from "react";
 import { StyleSheet, ScrollView } from "react-native";
-import Start from "./Main/Start";
-import Connection from "./Main/Connection";
-import Server from "./Main/Server";
-import Contact from "./Main/Contact";
-import Ads from "./Main/Ads";
-import Check from "./Main/Check";
-import Comment from "./Main/Comment";
+import Home from "./Home";
+import Log from "./Log";
+import Tools from "./Tools";
 
 export class Main extends Component {
   render() {
-    return (
-      <ScrollView style={styles.container}>
-        <Start />
-        <Connection />
-        <Server />
-        <Contact />
-        <Check />
-        <Ads />
-        <Comment />
-      </ScrollView>
-    );
+    const { id } = this.props;
+    switch (id) {
+      case 1:
+        return <Home />;
+      case 2:
+        return <Log />;
+      case 3:
+        return <Tools />;
+      case 4:
+        return <Log />;
+      default:
+        return <Home />;
+    }
   }
 }
 

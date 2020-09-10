@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { Octicons } from "@expo/vector-icons";
 
-export class Connection extends Component {
+export class Changer extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.server}>
-          <Octicons name="file-binary" size={24} color="grey" />
-          <Text style={styles.name}>SSL/TLS -> SSH</Text>
+        <View>
+          <Text style={styles.header}>DNS Changer</Text>
+          <Text style={styles.name}>
+            Improve privacy and bypass internet censorship
+          </Text>
         </View>
 
         <Ionicons name="ios-arrow-forward" size={20} color="grey" />
@@ -18,7 +19,7 @@ export class Connection extends Component {
   }
 }
 
-export default Connection;
+export default Changer;
 
 const styles = StyleSheet.create({
   container: {
@@ -41,12 +42,11 @@ const styles = StyleSheet.create({
   },
   name: {
     color: "grey",
-    marginLeft: 10,
     fontWeight: "bold"
   },
-  server: {
-    margin: 10,
-    flexDirection: "row",
-    alignItems: "center"
+  header: {
+    fontSize: 17,
+    fontWeight: "bold",
+    color: "grey"
   }
 });

@@ -3,12 +3,44 @@ import { View, Text, StyleSheet } from "react-native";
 
 export class Nav extends Component {
   render() {
+    // const { switchMe } = this.props;
+    // const switchTab = () => {
+    //   this.props.switchMe(2);
+    // };
     return (
       <View style={styles.container}>
-        <Text style={styles.name}>HOME</Text>
-        <Text style={styles.name}>LOGS</Text>
-        <Text style={styles.name}>TOOLS</Text>
-        <Text style={styles.name}>HELP</Text>
+        <Text
+          style={styles.name}
+          onPress={() => {
+            this.props.switchMe(1);
+          }}
+        >
+          HOME
+        </Text>
+        <Text
+          style={styles.name}
+          onPress={() => {
+            this.props.switchMe(2);
+          }}
+        >
+          LOGS
+        </Text>
+        <Text
+          style={styles.name}
+          onPress={() => {
+            this.props.switchMe(3);
+          }}
+        >
+          TOOLS
+        </Text>
+        <Text
+          style={styles.name}
+          onPress={() => {
+            this.props.switchMe(4);
+          }}
+        >
+          HELP
+        </Text>
       </View>
     );
   }
